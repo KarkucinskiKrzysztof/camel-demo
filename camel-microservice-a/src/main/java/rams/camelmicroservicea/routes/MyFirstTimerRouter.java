@@ -1,9 +1,8 @@
-package rams.camelmicroservicea.route.a;
+package rams.camelmicroservicea.routes;
 
 import java.time.LocalDateTime;
 
 import org.apache.camel.builder.RouteBuilder;
-import org.springframework.stereotype.Component;
 import rams.camelmicroservicea.pojo.SimpleLoogingPeocessor;
 
 //@Component

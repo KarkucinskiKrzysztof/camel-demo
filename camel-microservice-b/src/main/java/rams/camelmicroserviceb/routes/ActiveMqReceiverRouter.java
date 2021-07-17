@@ -1,4 +1,4 @@
-package rams.camelmicroserviceb.route.a;
+package rams.camelmicroserviceb.routes;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.dataformat.JsonLibrary;
@@ -29,6 +29,7 @@ public class ActiveMqReceiverRouter extends RouteBuilder {
                 .bean(ceTransform)
                 .to("log:recived-message-from-active-mq");
 //          unmarshall czyli deserializacja za pomocą jacksona a wiadomość z kolejki jest zmieniana na instancje klasy CurrencyExchange
+
 
         from("activemq:my-activemq-xml-queue")
                 .unmarshal()
